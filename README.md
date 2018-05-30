@@ -1,4 +1,4 @@
-# DataPool_1
+# DataPool_2
 This Symfony project shows how to collect data from different resources (DB, XML, JSON, ...),
 It shows the importance of use of Interfaces in OOP.
 Datapool_2 is the DAO based model approach, please check Datapool_1 for the all-in-one controller approach.
