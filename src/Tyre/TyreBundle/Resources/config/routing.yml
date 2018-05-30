@@ -1,0 +1,6 @@
+tyre_tyre_search:
+    pattern:  /search
+    defaults: { _controller: TyreTyreBundle:Default:search }
+tyre_tyre_detail:
+    pattern:  /detail
+    defaults: { _controller: TyreTyreBundle:Default:detail }

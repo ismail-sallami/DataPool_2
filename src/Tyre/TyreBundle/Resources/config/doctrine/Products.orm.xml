@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Tyre\TyreBundle\Entity\Products" table="products">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="manufacturer" type="string" column="manufacturer" length="50" nullable="false"/>
+    <field name="name" type="string" column="name" length="50" nullable="false"/>
+    <field name="additional" type="string" column="additional" length="50" nullable="false"/>
+    <field name="price" type="float" column="price" precision="10" scale="0" nullable="false"/>
+    <field name="availability" type="integer" column="availability" nullable="false"/>
+    <field name="productImage" type="string" column="product_image" length="100" nullable="false"/>
+  </entity>
+</doctrine-mapping>

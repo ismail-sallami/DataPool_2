@@ -1,0 +1,4 @@
+tyre_tyre:
+    resource: "@TyreTyreBundle/Resources/config/routing.yml"
+    prefix:   /
+

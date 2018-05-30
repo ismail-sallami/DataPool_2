@@ -1,0 +1,94 @@
+{%extends "TyreTyreBundle:Default:index.html.twig"%}
+{%block stylesheets %}
+<style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .table {
+            padding: 19px 29px 29px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        }
+        .image-product {
+            height: 100px;
+        }
+    .container{
+        background-color: white;
+        padding: 0px 15px 0px 15px !important
+    }
+    .new-search{
+        float: right;
+        margin: -45px 25px 15px 11px;
+    }
+    .new-search > a img{
+        width: 40px;
+    }
+       
+        
+
+    </style>
+{%endblock%}
+   {%block container %}
+
+<div class="container" >
+    <h2>Product details</h2>
+
+    <div class="new-search">
+                <a style="font-size:18px;"href="{{ path('tyre_tyre_search') }}">
+                    <img src="http://imag.malavida.com/mvimgbig/download-s/visual-search-pony-9346-0.jpg">
+                    New Search
+                </a>
+            </div>
+
+    {% if results|length  ==0 and xml_result|length == 0 %}
+        <tr>
+            <div class="alert alert-danger">
+                No matching results found!
+            </div>
+        </tr>
+    {% else %}
+        <table class="table">
+            <tr>
+                <th style="text-align:center">Product Title</th>
+                <th style="text-align:center">Product Name</th>
+                <th style="text-align:center">Product Image</th>
+                <th style="text-align:center">Product Price</th>
+            </tr>
+           {% for item in results %}
+                    <tr>
+                        <td>{{ item.getManufacturer }}</td>
+                        <td>{{ item.getName }}</td>
+                        <td style="text-align:center"><a href="{{ item.getProductImage }}">
+                                <img class="image-product" src="{{ item.getProductImage }}">
+                            </a></td>
+                        <td style="text-align:center">{{ item.getPrice }}</td>
+                    </tr>
+           {% endfor %}
+
+
+            {% for product in xml_result %}
+                <tr>
+                    <td>{{ product.manufacturer }}</td>
+                    <td>{{ product.name }}</td>
+                    <td style="text-align:center"><a href="{{ product.product_image }}">
+                            <img class="image-product"  src="{{ product.product_image }}">
+                        </a></td>
+                    <td style="text-align:center">{{ product.price }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</div>
+        {%endblock%}
+       
+

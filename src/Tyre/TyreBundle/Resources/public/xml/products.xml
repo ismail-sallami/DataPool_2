@@ -1,0 +1,38 @@
+<products>
+	<product>
+		<id>2222</id>
+		<manufacturer>AMINE</manufacturer>
+		<name>*AMINE    123    185/65 R15 88 T</name>
+		<additional>AUSLAUF</additional>
+		<price>12.24</price>
+		<availability>4</availability>
+		<product_image>http://media2.tyre24.de/images/tyre/330-R-w300-h300-br1.jpg</product_image>
+	</product>
+	<product>
+		<id>3333</id>
+		<manufacturer>AMINE</manufacturer>
+		<name>*AMINE    456    185/65 R15 88 T</name>
+		<additional>AUSLAUF</additional>
+		<price>734.24</price>
+		<availability>4</availability>
+		<product_image>http://media2.tyre24.de/images/tyre/330-R-w300-h300-br1.jpg</product_image>
+	</product>
+	<product>
+		<id>3333</id>
+		<manufacturer>AMINE</manufacturer>
+		<name>*AMINE    789    185/65 R15 88 T</name>
+		<additional>AUSLAUF</additional>
+		<price>80.24</price>
+		<availability>4</availability>
+		<product_image>http://media2.tyre24.de/images/tyre/330-R-w300-h300-br1.jpg</product_image>
+	</product>
+        <product>
+		<id>44444</id>
+		<manufacturer>AMINE TOYOTA</manufacturer>
+		<name>*AMINE TOYOTA TEST   789    185/65 R15 88 T</name>
+		<additional>AUSLAUF</additional>
+		<price>5555.24</price>
+		<availability>4</availability>
+		<product_image>http://media2.tyre24.de/images/tyre/330-R-w300-h300-br1.jpg</product_image>
+	</product>
+</products>

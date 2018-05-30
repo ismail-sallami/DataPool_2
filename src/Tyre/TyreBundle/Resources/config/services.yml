@@ -1,0 +1,16 @@
+parameters:
+#    tyre_tyre.example.class: Tyre\TyreBundle\Example
+
+services:
+#    tyre_tyre.example:
+#        class: %tyre_tyre.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+  Tyre\TyreBundle\Repository\ProductRepositoryInterface:
+     class: Tyre\TyreBundle\Repository\ProductRepositoryInterface
+
+  Tyre\TyreBundle\Repository\DoctrineProductRepository:
+    class: Tyre\TyreBundle\Repository\DoctrineProductRepository
+
+  Tyre\TyreBundle\Repository\XMLRepositoryInterface:
+     class: Tyre\TyreBundle\Repository\XMLRepositoryInterface
